@@ -12,6 +12,7 @@ cURL is a command line tool for transferring data using various protocols. Gnome
 	sudo apt-get install curl gnome-schedule
 
 **Step 2:** Setup a new application
+
 Goto [Facebook Developers Page](http://www.facebook.com/developers/) and setup a new application. Fill in all the required fields. Don’t forget to set ‘Application Type’ to ‘Desktop’. Remember the ‘Application ID’ and ‘Application secret’ given in the end of the process.
 
 **Step 3:** Request an OAuth access token with the proper permissions
@@ -29,6 +30,7 @@ Now you will be given the precious ‘Access Token’. Save it somewhere
 **WARNING:** Facebook does not recommend following this procedure and storing Access Tokens or Application secrets in desktop applications, because if somebody gets hold of that code, you are dead. I mean your facebook profile security is severely compromised and can be used in any malicious way they desire.
 
 **Step 4:** Writing the script
+
 Just copy the script and save it in a file like ‘/home/yourName/birthdayscript.sh’ after  entering THE precious access token of yours in the proper place.
 
 Now you can browse to the location where you saved the script via terminal and execute the script with the command
@@ -37,6 +39,7 @@ Now you can browse to the location where you saved the script via terminal and e
 And you can see the progress in the file birthdaywishbackup.log
 
 **Step 5:** Automating the script
+
 Yes, it is of no use if you have to run this manually each and everyday to wish somebody. So you can schedule it to run and write automagically on walls of birthday boys/gals everyday. If you are the geekiest type you can do it using a cron-job and you won’t need this tutorial anyway. But if you are interested, you can find how to do that here.
 For the ordinary geek, there’s this dumb-simple GUI based tool called gnome-schedule. Run the command
 
@@ -46,4 +49,3 @@ in a terminal and you will be able to come up with a scheduled cron-job like the
 **IMPORTANT: **Make sure you set a time of the day that you will keep your computer switched on, because a cron-job is not god, and doesn’t know how turn on the computer it is running, by itself 
 
 It’s done!!! Enjoy being a lazy, cold-hearted nerd, who has no sense of finer things in life.
-
